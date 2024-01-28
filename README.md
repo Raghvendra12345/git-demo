@@ -10,4 +10,22 @@
 7>if we make new file like index.html,style.css  so at first the git status will show it as untracked files,but after using function- (git add .) we can see these files are added
 
 
-                                                                
+8>local git workflow is: githubrepo->clone->changes->add->commit->push
+
+9>learn these formulas for futher help in git:
+   git branch (to check branch)
+   git branch -M main (To rename branch)
+   git checkout <branch name> (navigate)
+   git checkout -b <new branch name> (to create new branch)
+   git branch -d <branch name> (to delete branch)
+
+
+10>undoing changes
+ case 1: staged changes (add)
+        git reset <file name>
+        git reset
+ case 2:commited changes(one comit change)
+        git reset HEAD-1
+ case 3:commited changes(for many comit)
+         git reset <comit hash>
+         git reset --hard <-commit hash->
